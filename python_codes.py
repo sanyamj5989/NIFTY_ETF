@@ -9,6 +9,8 @@ df.columns = df.columns.get_level_values(0)
 
 # Calculate previous day's close
 df['Prev_Close'] = df['Close'].shift(1)
+
+# Calculate metrics
 df['Open_Gap_%'] = ((df['Open'] - df['Prev_Close']) / df['Prev_Close']) * 100
 df['Close_%'] = ((df['Close'] - df['Open']) / df['Open']) * 100
 
