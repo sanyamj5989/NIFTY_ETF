@@ -42,3 +42,4 @@ print(f"\nTotal Buy Days: {buy_days.shape[0]}")
 print(f"Average Buy Price on Buy Signal Days: ₹{average_buy_price:.2f}")
 print(f"Latest Closing Price: ₹{latest_close_price:.2f}")
 print(f"Return if held until now: {return_percentage:.2f}%")
+
